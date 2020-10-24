@@ -166,6 +166,7 @@ public class Main {
                 .filter(p -> p.getAge() < 25)
                 .peek(System.out::println)
                 .collect(Collectors.toSet());
+
         IntStream
                 .range(0, persons.size())
                 .filter(i -> i % 2 == 0)
