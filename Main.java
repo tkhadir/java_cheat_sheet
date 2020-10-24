@@ -166,6 +166,14 @@ public class Main {
                 .filter(p -> p.getAge() < 25)
                 .peek(System.out::println)
                 .collect(Collectors.toSet());
+        IntStream
+                .range(0, persons.size())
+                .filter(i -> i % 2 == 0)
+                .mapToObj(i -> {
+                    System.out.println("getting person : " + i + " equals to " + persons.get(i));
+                    return persons.get(i);
+                })
+                .collect(Collectors.toList());
 
         Map<String, String> map = new HashMap<>();
         map.putIfAbsent("mykey", "hello");
