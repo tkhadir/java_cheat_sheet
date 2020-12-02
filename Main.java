@@ -259,6 +259,30 @@ public class Main {
     void encode() {
         Base64.getEncoder().encode("JC".getBytes());
     }
+    
+    void convertString() {
+        String input = "hello world";
+        log.info(String.join("", Arrays.asList(input.split(""))
+                .stream()
+                .map(s-> ((int)s.charAt(0)) + ",")
+                .collect(Collectors.toList())
+                ));//to ascii
+        log.info(String.join("", Arrays.asList(input.split(""))
+                .stream()
+                .map(s-> Integer.toHexString((int) s.charAt(0)) + ",")
+                .collect(Collectors.toList())
+        ));// to hex
+        log.info(String.join("", Arrays.asList(input.split(""))
+                .stream()
+                .map(s-> Integer.toBinaryString((int) s.charAt(0)) + ",")
+                .collect(Collectors.toList())
+        ));// to binary
+        log.info(String.join("", Arrays.asList(input.split(""))
+                .stream()
+                .map(s-> Integer.toOctalString((int) s.charAt(0)) + ",")
+                .collect(Collectors.toList())
+        ));// to octal
+    }
 
     public static void main(final String args[]) {
         Main m = new Main();
