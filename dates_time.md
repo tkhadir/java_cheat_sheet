@@ -1,10 +1,10 @@
 # Versions
 
--java 1.0
+- java 1.0
 java.util.Date;java.text.Format
--java 1.2
+- java 1.2
 java.util.Calendar
--java 8
+- java 8
 java.time.*
 
 ## Creating Dates and Times
