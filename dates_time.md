@@ -27,3 +27,16 @@ f must be DateTimeFormatter
 LocalDate d= new LocalDate() //not compiled
 LocalDate d= LocalDate.of(2015,2,30); //not compile
 ```
+## Manipulating Dates and Times
+
+```
+plusXxx(int)
+minusXxx(int)
+return new immutable, original not changed, like String
+chain of method on date and time
+getXxx(); //Xxx= DayOfWeek,DayOfYear, Month, Year
+dt1.isBefore(dt2)
+dt1.isAfter(dt2)
+Xxx= Years / Months /Days/Hours/Minutes/Seconds/Nanos;
+Java 8 date & time are immutable, like String objects.
+```
