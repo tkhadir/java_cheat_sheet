@@ -11,7 +11,7 @@ java.time.*
 
 ```
 static of()
-Overriden by LocalData, LocalTime and LocalD­ateTime
+Overriden by LocalDate, LocalTime and LocalDateTime
 LocalDate.of(y,m.d);
 m: int or Month(1-12)
 LocalTime.of(h,mi,s,ns)
