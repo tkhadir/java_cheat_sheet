@@ -1,3 +1,6 @@
+for more :
+https://interviewbubble.com/lombok-tutorials/
+
 Lombok @Getter and @Setter Annotations
 You can annotate any field with @Getter and/or @Setter, to let lombok generate the default getter/setter automatically.
 ```
